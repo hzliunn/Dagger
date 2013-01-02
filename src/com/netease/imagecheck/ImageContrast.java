@@ -15,7 +15,14 @@ import com.sun.image.codec.jpeg.JPEGImageEncoder;
 
 /**
  * ImageContrast changes image from RGB to LAB and make comparison
+<<<<<<< HEAD
+<<<<<<< HEAD
  * @author LingFei
+=======
+>>>>>>> 551f1bb... Merge from image_contrast_feature branch
+=======
+ * @author LingFei
+>>>>>>> c527e4b... add self-test and build automated testing process
  */
 @SuppressWarnings("restriction")
 public class ImageContrast {
@@ -57,9 +64,21 @@ public class ImageContrast {
 		double x = xyz.x / 95.047;
 		double y = xyz.y / 100.000;
 		double z = xyz.z / 108.883;
+<<<<<<< HEAD
+<<<<<<< HEAD
 		x = (x > 0.008856) ? Math.pow(x, 1.0 / 3.0) : (7.787 * x + 16.0 / 116);
 		y = (y > 0.008856) ? Math.pow(y, 1.0 / 3.0) : (7.787 * y + 16.0 / 116);
 		z = (z > 0.008856) ? Math.pow(z, 1.0 / 3.0) : (7.787 * z + 16.0 / 116);
+=======
+		x = (x > 0.008856) ? Math.pow(x, 1.0 / 3.0) : (7.787 * x + 16 / 116);
+		y = (y > 0.008856) ? Math.pow(y, 1.0 / 3.0) : (7.787 * y + 16 / 116);
+		z = (z > 0.008856) ? Math.pow(z, 1.0 / 3.0) : (7.787 * z + 16 / 116);
+>>>>>>> 551f1bb... Merge from image_contrast_feature branch
+=======
+		x = (x > 0.008856) ? Math.pow(x, 1.0 / 3.0) : (7.787 * x + 16.0 / 116);
+		y = (y > 0.008856) ? Math.pow(y, 1.0 / 3.0) : (7.787 * y + 16.0 / 116);
+		z = (z > 0.008856) ? Math.pow(z, 1.0 / 3.0) : (7.787 * z + 16.0 / 116);
+>>>>>>> 909b59d... Update ImageContrast.java
 		lab.l = 116 * Math.pow(y, 1.0 / 3.0) - 16;
 		lab.a = 500 * (Math.pow(x, 1.0 / 3.0) - Math.pow(y, 1.0 / 3.0));
 		lab.b = 200 * (Math.pow(y, 1.0 / 3.0) - Math.pow(z, 1.0 / 3.0));
@@ -138,7 +157,14 @@ public class ImageContrast {
 	
 	/**
 	 * RGB color space
+<<<<<<< HEAD
+<<<<<<< HEAD
 	 * @author LingFei
+=======
+>>>>>>> 551f1bb... Merge from image_contrast_feature branch
+=======
+	 * @author LingFei
+>>>>>>> c527e4b... add self-test and build automated testing process
 	 */
 	public static class ColorLAB {
 		public double l;
@@ -148,7 +174,14 @@ public class ImageContrast {
 	
 	/**
 	 * XYZ color space
+<<<<<<< HEAD
+<<<<<<< HEAD
 	 * @author LingFei
+=======
+>>>>>>> 551f1bb... Merge from image_contrast_feature branch
+=======
+	 * @author LingFei
+>>>>>>> c527e4b... add self-test and build automated testing process
 	 */
 	public static class ColorXYZ {
 		public double x;

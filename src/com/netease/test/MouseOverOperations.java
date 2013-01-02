@@ -1,12 +1,18 @@
 package com.netease.test;
 
+<<<<<<< HEAD
 import org.testng.SkipException;
+=======
+>>>>>>> c527e4b... add self-test and build automated testing process
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.netease.dagger.BrowserEmulator;
+<<<<<<< HEAD
 import com.netease.dagger.GlobalSettings;
+=======
+>>>>>>> c527e4b... add self-test and build automated testing process
 
 /**
  * mouseOver的一系列操作
@@ -19,12 +25,16 @@ public class MouseOverOperations {
 	@BeforeClass
 	public void doBeforeClass() {
 		be = new BrowserEmulator();
+<<<<<<< HEAD
 		CommonFunction.openCaptain(be);
 		
 		// When the browser is Safari, skipped this test case
 		if (GlobalSettings.browserCoreType == 4) {
 			throw new SkipException("Selenium不支持Safari");
 		}
+=======
+		CommonFunction.openCaptain(be);
+>>>>>>> c527e4b... add self-test and build automated testing process
 	}
 
 	@Test

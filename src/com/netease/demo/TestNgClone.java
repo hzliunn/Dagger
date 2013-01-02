@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 47c1094... Add License in source code files
 /*
  * Copyright (c) 2012-2013 NetEase, Inc. and other contributors
  *
@@ -14,6 +18,11 @@
  *  limitations under the License.
  *
  */
+<<<<<<< HEAD
+=======
+>>>>>>> 714206b... Add demo
+=======
+>>>>>>> 47c1094... Add License in source code files
 package com.netease.demo;
 
 import org.testng.annotations.AfterClass;
@@ -22,11 +31,20 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import com.netease.dagger.BrowserEmulator;
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7f30a6f... Modify codes according to CheckStyle's result
 /**
  * A clone of TestNg.java to show "Parallel Mode"<br>
  * Please see https://github.com/NetEase/Dagger/wiki/Parallel-Mode
  * @author ChenKan
  */
+<<<<<<< HEAD
+=======
+>>>>>>> 714206b... Add demo
+=======
+>>>>>>> 7f30a6f... Modify codes according to CheckStyle's result
 public class TestNgClone {
 
 	String googleUrl = "http://www.google.com";

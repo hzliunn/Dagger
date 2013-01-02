@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 47c1094... Add License in source code files
 /*
  * Copyright (c) 2012-2013 NetEase, Inc. and other contributors
  *
@@ -14,14 +18,28 @@
  *  limitations under the License.
  *
  */
+<<<<<<< HEAD
+=======
+>>>>>>> 7173c5a... Add demo
+=======
+>>>>>>> 47c1094... Add License in source code files
 package com.netease.demo;
 
 import com.netease.dagger.BrowserEmulator;
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7f30a6f... Modify codes according to CheckStyle's result
 /**
  * The demo to show Dagger's basic usage
  * @author ChenKan
  */
+<<<<<<< HEAD
+=======
+>>>>>>> 7173c5a... Add demo
+=======
+>>>>>>> 7f30a6f... Modify codes according to CheckStyle's result
 public class GoogleSearch {
 
 	public static void main(String[] args) {

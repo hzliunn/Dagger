@@ -18,7 +18,14 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 /**
  * ImageProcess contains APIs for screen shot and image process
+<<<<<<< HEAD
+<<<<<<< HEAD
  * @author LingFei
+=======
+>>>>>>> 551f1bb... Merge from image_contrast_feature branch
+=======
+ * @author LingFei
+>>>>>>> c527e4b... add self-test and build automated testing process
  */
 public class ImageProcess {
 	
