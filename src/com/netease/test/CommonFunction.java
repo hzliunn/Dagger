@@ -69,7 +69,7 @@ public class CommonFunction {
 	public static void clickButton(BrowserEmulator be) {
 		be.click("//input[@value='点击button，触发Ajax']");
 		be.expectElementExistOrNot(true, "//h1[(text()='点击了button，触发了Ajax')]",
-				5000);
+				10000);
 	}
 
 	/**
