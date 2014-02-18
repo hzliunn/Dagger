@@ -328,6 +328,28 @@ public class BrowserEmulator {
 		rb.keyRelease(keyCode);	// release key
 		logger.info("Pressed key with code " + keyCode);
 	}
+	
+	// TODO unavailable for space 
+	/**
+     * Mimic system-level keyboard event with String
+     * @param text
+     *           
+     */
+    public void inputKeyboard(String text) {
+        String cmd = System.getProperty("user.dir")
+                + "\\res\\SeleniumCommand.exe" + " sendKeys " + text;
+
+        Process p = null;
+        try {
+            p = Runtime.getRuntime().exec(cmd);
+            p.waitFor();
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            p.destroy();
+        }
+        logger.info("Pressed key with string " + text);
+    }
 
 	//TODO Mimic system-level mouse event
 
