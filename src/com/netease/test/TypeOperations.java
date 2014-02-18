@@ -16,7 +16,8 @@ import com.netease.dagger.GlobalSettings;
 public class TypeOperations {
 
 	BrowserEmulator be;
-	String input = "hello!";
+	String input = "hello world !";
+	String inputForIE = "hello\" \"world\" \"!";
 
 	@BeforeClass
 	public void doBeforeTest() {
@@ -40,7 +41,7 @@ public class TypeOperations {
 			RemoteWebDriver driver = be.getBrowserCore();
 			driver.switchTo().frame("ifm");
 			WebElement editable = driver.switchTo().activeElement();
-			be.inputKeyboard(input);
+			be.inputKeyboard(inputForIE);
 			driver.switchTo().defaultContent();
 			be.click("//input[@value='提交<iframe>节点文本']");
 			be.expectElementExistOrNot(true, "//h1[contains(text(),'" + input
